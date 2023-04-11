@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Weather App</title>
+</head>
+<body>
+    <h1>Weather for {{ weather_data.city }}</h1>
+    <p>Temperature: {{ weather_data.temperature }}&deg;C</p>
+    <p>Description: {{ weather_data.description }}</p>
+    <img src="http://openweathermap.org/img/w/{{ weather_data.icon }}.png">
+    <form method="get">
+        <label for="city">Enter city:</label>
+        <input type="text" name="city" id="city">
+        <input type="submit" value="Get weather">
+    </form>
+</body>
+</html>
